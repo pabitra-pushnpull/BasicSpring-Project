@@ -14,7 +14,6 @@ public class EmployeeServices {
 	public Map<Integer, EmployeeModel> Mymap = new LinkedHashMap<>();
 //	private  AtomicInteger id = new AtomicInteger();
 	
-	
 	public Collection<EmployeeModel> getEmploye(){
 		return Mymap.values();
 	}
