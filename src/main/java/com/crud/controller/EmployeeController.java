@@ -22,7 +22,7 @@ public class EmployeeController {
 	@Autowired
 	EmployeeServices empSer;
 	
-	@GetMapping("/employees")
+	@GetMapping("/employee")
 	public Collection<EmployeeModel> getempdata()
 	{
 		return empSer.getEmploye();
@@ -44,7 +44,7 @@ public class EmployeeController {
 		return empSer.updMap(id, age, empModel);
 	}
 	
-	 @DeleteMapping("/empdel/{id}")
+	@DeleteMapping("/empdel/{id}")
 	public String deleteData(@PathVariable int id)
 	{
 		return empSer.deleteMap(id);
